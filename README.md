@@ -31,7 +31,7 @@ A Python wrapper for the Cloudflare Workers AI API
 
 **`.set_system_message()`**\
 *Parameters*:
-**`message`**:`str` - A system message to be given to the LLM (usually has instructions)
+- **`message`**:`str` - A system message to be given to the LLM (usually has instructions)
 
 **`.send_user_message()`**\
 *Parameters*:
@@ -40,12 +40,12 @@ A Python wrapper for the Cloudflare Workers AI API
 *Returns*:
 - `str` - The LLM's response. Any tools will be run before return, and the LLM is re-prompted for a response after a tool call. The return message and tool responses can also be accessed from `LLM_Convo.messages`
 
-**`.model_name`**:`str` - The model name given to the constructor
-**`.account_id`**:`str` - The account ID given to the constructor
-**`.api_token`**:`str` - The API token given to the constructor
-**`.tools`**:`LLM_Tools` - The tools given to the constructor
-**`.messages`**:`LLM_Messages` - A collection of message objects that represent system, tool, assistant, and user messages.
-**`.API`**:`LLM_API` - The API object used to make requests, manage tool calls, etc
+**`.model_name`**:`str` - The model name given to the constructor\
+**`.account_id`**:`str` - The account ID given to the constructor\
+**`.api_token`**:`str` - The API token given to the constructor\
+**`.tools`**:`LLM_Tools` - The tools given to the constructor\
+**`.messages`**:`LLM_Messages` - A collection of message objects that represent system, tool, assistant, and user messages\
+**`.API`**:`LLM_API` - The API object used to make requests, manage tool calls, etc\
 
 ### LLM_Tools
 **`LLM_Tools`** [Constructor]\
@@ -54,13 +54,13 @@ A Python wrapper for the Cloudflare Workers AI API
 
 **`.get_function()`**\
 *Parameters*:
-- **`name`**:`str` - The tool name
+- **`name`**:`str` - The tool name\
 *Returns*:
 - `Callable` - The function assigned to that tool
 
 **`.get_api_structure()`**\
 *Parameters*:
-- **`name`**:`str` - The tool name
+- **`name`**:`str` - The tool name\
 *Returns*:
 - `dict` - The API structure assigned to the tool
 
