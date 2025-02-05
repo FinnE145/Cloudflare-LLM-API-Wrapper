@@ -18,7 +18,7 @@ A Python wrapper for the Cloudflare Workers AI API
 3. Initialize an `LLM_Convo` object with your chosen model, account number, API key, and optional tools (an `LLM_Tools` object). The first 3 pieces of info can be found on the Cloudflare website.
 4. Optionally call `set_system_message` from your `LLM_Convo` object to set a system message to instruct the LLM.
 5. Call `send_user_message` from your `LLM_Convo` object to prompt the LLM, and access the function's return value for its response.
-6. See docs below for further usage details.
+6. See docs below for further usage details, or check out the [example](https://github.com/FinnE145/Cloudflare-LLM-API-Wrapper/blob/main/example.py)
 
 # Docs:
 ### LLM_Convo
